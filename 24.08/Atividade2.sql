@@ -10,12 +10,12 @@
 
 -- 1) Crie um banco de dados para um e-commerce, onde o sistema trabalhará com as informações dos produtos deste e-commerce. 
 
-CREATE DATABASE db_ecommerce_generation;
+create database db_ecommerce_generation;
 
 
 -- 2) Crie uma tabela de produtos e determine 5 atributos relevantes dos produtos para se trabalhar com o serviço deste e-commerce.
 
-CREATE TABLE tb_produtos (
+create table tb_produtos (
 id bigint auto_increment not null primary key,
 nome varchar(50),
 categoria varchar(11),
@@ -25,8 +25,8 @@ quantidade int(5)
 
 -- 3) Insira nesta tabela no mínimo 8 dados (registros).
 
-INSERT INTO tb_produtos (nome,categoria,valor,quantidade)
-VALUES
+insert into tb_produtos (nome,categoria,valor,quantidade)
+values
 ("Malbec","Perfume",115.50,20),
 ("Whey Protein","Academia",120,30),
 ("Nescau","Achocolatado",11.50,25),
@@ -39,18 +39,18 @@ VALUES
 
 -- 4) Faça um SELECT que retorne todes os produtos com o valor maior do que 500.
 
-SELECT *
-FROM tb_produtos 
-WHERE valor > 500;
+select *
+from tb_produtos 
+where valor > 500;
 
 -- 5) Faça um SELECT que retorne todes os produtos com o valor menor do que 500.
 
-SELECT *
-FROM tb_produtos 
-WHERE valor < 500;
+select *
+from tb_produtos 
+where valor < 500;
 
 -- 6) Ao término atualize um registro desta tabela através de uma query de atualização.
 
-UPDATE tb_produtos 
-SET valor = 65
-WHERE id = 14;
+update tb_produtos 
+set valor = 65
+where id = 14;
